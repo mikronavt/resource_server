@@ -8,6 +8,10 @@ import recources.TestResource;
 public class ResourceServer implements ResourceServerI {
     private TestResource resource;
 
+    public ResourceServer(){
+        this.resource = new TestResource();
+    }
+
     @Override
     public TestResource getTestResource() {
         return resource;
