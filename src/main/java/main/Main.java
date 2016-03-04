@@ -26,7 +26,7 @@ public class Main {
         }
 
 
-        DBParametersResource resource = (DBParametersResource) ReadXMLFileSAX.readXML("./data/MySqlResource.xdb");
+        DBParametersResource resource = (DBParametersResource) ReadXMLFileSAX.readXML(".//data//MySqlResource.xdb");
         System.out.println(resource);
     }
 }

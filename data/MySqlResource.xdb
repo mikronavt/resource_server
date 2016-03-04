@@ -1,4 +1,4 @@
-<class name="resources.DBParametersResource">
+<class name="recources.DBParametersResource">
     <name>db_example</name>
     <pass>tully</pass>
     <user>tully</user>
