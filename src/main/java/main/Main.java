@@ -1,5 +1,8 @@
 package main;
 
+import recources.DBParametersResource;
+import sax.ReadXMLFileSAX;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,5 +24,9 @@ public class Main {
         } catch(IOException ex){
             ex.printStackTrace();
         }
+
+
+        DBParametersResource resource = (DBParametersResource) ReadXMLFileSAX.readXML("./data/MySqlResource.xdb");
+        System.out.println(resource);
     }
 }
