@@ -1,6 +1,6 @@
 package resourceServer;
 
-import recources.TestResource;
+import resources.TestResource;
 
 /**
  * Created by User on 04.03.2016.

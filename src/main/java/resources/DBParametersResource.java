@@ -1,4 +1,4 @@
-package recources;
+package resources;
 
 /**
  * Created by User on 04.03.2016.

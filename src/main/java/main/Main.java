@@ -8,25 +8,15 @@ import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import recources.DBParametersResource;
 import resourceServer.ResourceServer;
 import resourceServer.ResourceServerController;
 import resourceServer.ResourceServerControllerMBean;
 import resourceServer.ResourceServerI;
-import sax.ReadXMLFileSAX;
 import servlets.ResourceServerServlet;
 
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.RandomAccessFile;
 import java.lang.management.ManagementFactory;
-import java.nio.ByteBuffer;
-import java.nio.channels.ByteChannel;
-import java.nio.channels.FileChannel;
-import java.util.Properties;
 
 /**
  * Created by User on 03.03.2016.
@@ -111,7 +101,7 @@ public class Main {
         server.setHandler(handlers);
 
         server.start();
-        logger.info("Server started");
+        System.out.println("Server started");
 
         server.join();
 

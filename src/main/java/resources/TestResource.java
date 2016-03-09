@@ -1,8 +1,10 @@
-package recources;
+package resources;
 
 /**
  * Created by User on 04.03.2016.
  */
+
+@SuppressWarnings("UnusedDeclaration")
 public class TestResource {
     private String name;
     private int age;

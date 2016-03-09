@@ -2,7 +2,9 @@ package servlets;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import resources.TestResource;
 import resourceServer.ResourceServerI;
+import sax.ReadXMLFileSAX;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -27,7 +29,10 @@ public class ResourceServerServlet extends HttpServlet {
 
         if(path != null){
             //добавить функционал
-
+            //System.out.println(path);
+            TestResource resource = (TestResource) ReadXMLFileSAX.readXML(path);
+            //System.out.println(resource);
+            resourceServer.setTestResource(resource);
             response.setStatus(HttpServletResponse.SC_OK);
             return;
         } else {
